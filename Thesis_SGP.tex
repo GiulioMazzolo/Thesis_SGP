@@ -1,0 +1,43 @@
+\documentclass[10pt,a5paper,twoside,openright,headsepline,footsepline]{book}
+\usepackage{geometry}
+\usepackage[english]{babel}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\author{Giulio Mazzolo}
+\date{}
+
+
+
+\begin{document}
+
+
+ \input{Thesis_chapters/title_page}
+
+ \newpage
+ \null
+ \thispagestyle{empty}
+ \newpage
+ 
+ \pagenumbering{Roman}
+ 
+ \input{Thesis_chapters/Abstract}
+ 
+ \newpage
+ \null
+ \thispagestyle{empty}
+ \newpage 
+ 
+ \tableofcontents
+ \newpage
+ 
+ \input{Thesis_chapters/Synopsis}
+ 
+ \pagenumbering{arabic}
+ \setcounter{page}{1}
+
+ \input{Thesis_chapters/test_chapter}
+
+\end{document}
