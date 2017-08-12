@@ -1,18 +1,24 @@
-\documentclass[10pt,a5paper,twoside,openright,headsepline,footsepline]{book}
+\documentclass[10pt,a5paper,oneside,openright]{book}
 \usepackage{geometry}
 \usepackage[english]{babel}
-
 \usepackage{fancyhdr}
+
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt}
+\fancyhf{}
+%\fancyhead[C]{\chaptername}
 
-\author{Giulio Mazzolo}
-\date{}
+\fancyhead[C]{\leftmark} 
+\fancyfoot[C]{\thepage}
+
+ \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+%\author{Giulio Mazzolo}
+%\date{}
 
 
 
 \begin{document}
-
 
  \input{Thesis_chapters/title_page}
 
@@ -27,14 +33,20 @@
  
  \newpage
  \null
- \thispagestyle{empty}
- \newpage 
+ \newpage
  
  \tableofcontents
+ 
  \newpage
+ \null
+ \newpage
+ 
+ \pagenumbering{roman}
+ \setcounter{page}{1} 
  
  \input{Thesis_chapters/Synopsis}
  
+ \newpage
  \pagenumbering{arabic}
  \setcounter{page}{1}
 
