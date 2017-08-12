@@ -6,17 +6,16 @@
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt}
 \fancyhf{}
-%\fancyhead[C]{\chaptername}
+
 
 \fancyhead[C]{\leftmark} 
 \fancyfoot[C]{\thepage}
 
- \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
 %\author{Giulio Mazzolo}
 %\date{}
 
-
+%\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
 
 \begin{document}
 
@@ -30,6 +29,7 @@
  \pagenumbering{Roman}
  
  \input{Thesis_chapters/Abstract}
+ \addcontentsline{toc}{chapter}{Abstract}
  
  \newpage
  \null
@@ -42,14 +42,23 @@
  \newpage
  
  \pagenumbering{roman}
- \setcounter{page}{1} 
+ %\setcounter{page}{1} 
  
+ \renewcommand{\chaptermark}[1]{\markboth{#1}{}} 
  \input{Thesis_chapters/Synopsis}
+ \chaptermark{Synopsis}
+ \addcontentsline{toc}{chapter}{Synopsis} 
  
  \newpage
  \pagenumbering{arabic}
  \setcounter{page}{1}
 
+ \part{Introduction}
+ \newpage
+ \null
+ \newpage
+
+ \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
  \input{Thesis_chapters/test_chapter}
 
 \end{document}
