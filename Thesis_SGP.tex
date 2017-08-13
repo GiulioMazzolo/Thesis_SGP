@@ -1,21 +1,15 @@
 \documentclass[10pt,a5paper,oneside,openright]{book}
-\usepackage{geometry}
+
 \usepackage[english]{babel}
+\usepackage{geometry}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt}
 \fancyhf{}
-
-
-\fancyhead[C]{\leftmark} 
+\fancyhead[C]{\footnotesize\itshape\nouppercase{\leftmark}}  %header in italic
+%\fancyhead[C]{\leftmark} %header not in italic
 \fancyfoot[C]{\thepage}
-
-
-%\author{Giulio Mazzolo}
-%\date{}
-
-%\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
 
 \begin{document}
 
