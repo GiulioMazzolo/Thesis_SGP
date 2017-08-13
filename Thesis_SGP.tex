@@ -3,12 +3,13 @@
 \usepackage[english]{babel}
 \usepackage{geometry}
 \usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{cite}
 
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt}
 \fancyhf{}
-\fancyhead[C]{\footnotesize\itshape\nouppercase{\leftmark}}  %header in italic
-%\fancyhead[C]{\leftmark} %header not in italic
+\fancyhead[C]{\footnotesize\itshape\nouppercase{\leftmark}}  %for no italic: \fancyhead[C]{\leftmark}
 \fancyfoot[C]{\thepage}
 
 \begin{document}
@@ -54,5 +55,9 @@
 
  \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
  \input{Thesis_chapters/test_chapter}
+ 
+ \bibliography{Thesis_chapters/Bibliography}
+ \bibliographystyle{IEEEtran}
+ \addcontentsline{toc}{chapter}{References}
 
 \end{document}
