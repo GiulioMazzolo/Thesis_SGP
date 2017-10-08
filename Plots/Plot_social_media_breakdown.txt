@@ -1,0 +1,25 @@
+#Setting legend box
+set key default
+set key box
+
+#Setting axes options
+set auto x
+set xtics nomirror rotate by -45
+set tic scale 0
+set yrange [0:100]
+set ylabel "Fraction of projects (%)"
+set format y '%.0s %c'
+set grid ytics lc rgb "#505050"
+
+
+#Setting histogram style
+set style data histogram
+set style histogram cluster gap 1
+set style fill solid border -1
+HPC = "#406090"; QuantumTechnologies = "#4caf13"; Other = "#e5a206"
+
+
+plot 'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Social_channels_breakdown.txt' using 2:xtic(1) ti col lt rgb HPC, \
+													   '' using 3 ti col lt rgb QuantumTechnologies, \
+													   '' using 4 ti col lt rgb Other
+
