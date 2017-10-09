@@ -6,7 +6,7 @@ set key box
 set auto x
 set xtics nomirror rotate by -45
 set tic scale 0
-set yrange [0:100]
+set yrange [0:105]
 set ylabel "Fraction of projects (%)"
 set format y '%.0s %c'
 set grid ytics lc rgb "#505050"
