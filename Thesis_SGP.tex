@@ -1,8 +1,8 @@
-\documentclass[10pt,a5paper,oneside,openright]{book}
+\documentclass[10pt,a5paper,openright]{book}
 
+\usepackage[top=3cm,bottom=3cm,left=2.25cm,right=2.25cm,asymmetric]{geometry}
 \usepackage[english]{babel}
 \usepackage{graphicx} %for gnuplot with latex fonts
-\usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{afterpage} %for landscape table in appendix
@@ -14,8 +14,12 @@
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt}
 \fancyhf{}
-\fancyhead[C]{\footnotesize\itshape\nouppercase{\leftmark}}  %for no italic: \fancyhead[C]{\leftmark}
+\chead{}
+\fancyhead[RO]{Master in La scienza nella pratica giornalistica}
+\fancyhead[LE]{Giulio Mazzolo}
 \fancyfoot[C]{\thepage}
+
+\raggedbottom
 
 \begin{document}
 
