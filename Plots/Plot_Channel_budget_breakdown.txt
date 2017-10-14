@@ -15,5 +15,5 @@ set xlabel "Budget (Million Euro)"
 set ylabel "Number of channels"                                       
                                    
 plot 'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Channel_budget_HPC.txt' with points pointtype 24 pointsize 1.2 lc rgb "#e2240b" title "HPC project", \
-     'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Channel_budget_QT.txt' with points pointtype 26 pointsize 1.2 lc rgb "#34d344" title "QT project", \
-     'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Channel_budget_Other.txt' with points pointtype 21 pointsize 0.8 lc rgb "#406090" title "Other project"
+     'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Channel_budget_QT.txt' with points pointtype 21 pointsize 1.2 lc rgb "#34d344" title "QT project"
+     #'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Channel_budget_Other.txt' with points pointtype 21 pointsize 0.8 lc rgb "#406090" title "Other project"
