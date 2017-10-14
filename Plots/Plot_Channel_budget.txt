@@ -1,0 +1,32 @@
+set grid lc rgb "#505050"
+set boxwidth 0.4
+set style fill solid 1.00
+
+#Setting legend box
+set key default
+set key box
+set key ins vert
+set key right top
+
+#Setting axes options
+set xrange [0:11.5]
+set yrange [-0.5:6.5]  
+set xlabel "Budget (Million Euro)"
+set ylabel "Number of channels"
+
+#Setting line styles
+set style line 1 dt 1 lc rgb "#e2240b" lw 2 
+set style line 2 dt 2 lc rgb "#ce8d0c" lw 2
+set style line 3 dt 3 lc rgb "#34d344" lw 2
+set style line 4 dt 4 lc rgb "#c413a3" lw 2
+
+set arrow nohead ls 1 from 3.4,-0.5 to 3.4,6.5 
+set arrow nohead ls 2 from 3.5,-0.5 to 3.5,6.5
+set arrow nohead ls 3 from 3.8,-0.5 to 3.8,6.5 
+set arrow nohead ls 4 from 4.0,-0.5 to 4.0,6.5                                                 
+                                   
+plot 'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Channel_budget.txt' with points pointtype 21 pointsize 0.8 lc rgb "#406090" title "FET project", \
+												   1e20 ls 1 t "One channel", \
+												   1e20 ls 2 t "Two channels", \
+												   1e20 ls 3 t "Three channels", \
+ 												   1e20 ls 4 t "Four channels"	
