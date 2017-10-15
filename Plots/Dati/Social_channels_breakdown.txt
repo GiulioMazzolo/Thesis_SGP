@@ -2,6 +2,6 @@ Channel	       HPC	       QT	       Other
 Website        100 	      100		 94
 Twitter 	77 		0 	         50
 Facebook        23	       10		 20
-Linkedin        23	       20		 13
+LinkedIn        23	       20		 13
 YouTube         14              0                10
 ResearchGate     5              0                 9
