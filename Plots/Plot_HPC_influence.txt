@@ -1,0 +1,25 @@
+set grid lc rgb "#505050"
+set boxwidth 0.4
+set style fill solid 1.00
+
+#Setting legend box
+set key default
+set key box
+set key ins vert
+set key right top
+
+#Setting axes options
+set xrange [0:750]
+set yrange [0:6]  
+set xlabel "Followers"
+set ylabel "Followers/Following"
+
+#Setting line style
+set style line 1 dt 3 lc rgb "#e2240b" lw 2 
+
+set arrow nohead ls 1 from 116,0 to 116,6 
+set arrow nohead ls 1 from 0,2.07 to 750,2.07
+                                   
+plot 'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Influence_followers.txt' with points pointtype 21 pointsize 0.8 lc rgb "#406090" title "HPC project"
+													#1e20 ls 1 t "One channel", \
+												        #1e20 ls 1 t "Two channels"
