@@ -89,6 +89,9 @@ Table \ref{HPC_Twitter_activity} reports also the values for the Twitter profile
 \end{figure}
 
 \section{Influence}
+To find what are the HPC projects more influent on twitter, the data in table \ref{HPC_influence_table}. Data are updated to 14th October 2017. Influent projects on twitter are identified with the following conditions: high number of followers and high ratio followers/following. These data are were collected with twitonomy and are shown in table \ref{HPC_influence_table}.
+
+The values in the table are shown in figure \ref{HPC_influence_plot}. The plot shows that the most influent HPC projects are identified by the conditions followers more than 100 and ratio larger than 2. These two values were identified by calculating the median of the number of followers and of the ratio followers/following of HPC projects. These projects are ExaFLOW, EXDCI, NEXTGenIO and READEX.
 
 \begin{table}[t]
  \begin{center}
@@ -133,3 +136,68 @@ Table \ref{HPC_Twitter_activity} reports also the values for the Twitter profile
  \label{HPC_influence_plot}
  \end{center}
 \end{figure}
+
+\section{Mentions of HPC projects}
+A monitoring activity was launched to estimate the impact of HPC projects of Twitter. This was performed with the Twitter Analytics tool NUVI \cite{NUVI}. This activity monitored the mentions of the Twitter accounts of HPC projects from 1st July to 12th October 2017. The monitor activity analysed a total of 1323 social mentions. The time distribution of the mentions is shown in figure \ref{NUVI_time_distribution}.
+
+The peak of conversation happened on 12th September 2017. It consisted of 59 mentions, with the most frequently used keywords during that peak being filippo mantovani, workshop, server cpu, prototype and processors.
+
+Out of the 1323 mentions, 637 were original mentions, which had the potential of reaching an audience of 172 720 users. This reach is calculated as the sum of the followers of the accounts mentioning the analysed keywords. Moreover, 116 unique profiles made a total of 686 reshares. Shares and re-tweets spread the mentions to an additional 233 974 people. The spread is calculated as the sum of the followers of the accounts which shared or retweeted the tweets with the mentions. Reach and spread together give an estimate of the potential audience which came across with the tweeted contents. Figure \ref{HPC_Most_reach_spread_popular} shows the mentions with the largest reach, spread and the most popular one. The ratio between reach and spread defines the viral coefficient, which is equal to 1.4, see figure \ref{HPC_viral_coefficient}. As the value of the viral coefficient is larger than one indicates that the mentions were extremely viral. 
+
+\begin{figure}[!t] 
+ \begin{center}
+ \includegraphics[scale=0.4]{Images/NUVI_time_distribution.png}
+ \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
+ \label{NUVI_time_distribution}
+ \end{center}
+\end{figure}
+
+\begin{figure}[!t] 
+ \begin{center}
+ \includegraphics[scale=0.41]{Images/HPC_Most_reach_spread_popular.png}
+ \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
+ \label{HPC_Most_reach_spread_popular}
+ \end{center}
+\end{figure}
+
+\begin{figure}[!t] 
+ \begin{center}
+ \includegraphics[scale=0.2]{Images/HPC_viral_coefficient.png}
+ \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
+ \label{HPC_viral_coefficient}
+ \end{center}
+\end{figure}
+
+An overview of the topics treated in the monitored mentions is provided in figure \ref{HPC_word_burst}. The figure is based on the 1005 mentions which came across 485 major categories over the monitored time. The list of most shared words is in table \ref{Most_shared_words}. 
+
+\begin{figure}[!t] 
+ \begin{center}
+ \includegraphics[scale=0.55]{Images/HPC_word_burst.png}
+ \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
+ \label{HPC_word_burst}
+ \end{center}
+\end{figure}
+
+\begin{table}[t]
+ \begin{center}
+ {\scriptsize
+  \begin{tabular}{cccc}
+   \hline 
+   \hline
+   Shared word & Mentions & Fraction of total mentions \\ 
+   \hline
+   \hline
+   amp & 22 & 2.2\% \\
+   project & 18 & 1.8\% \\
+   supercomputer & 16 & 1.6\% \\
+   application & 15 & 1.5\% \\
+   etp4h & 14 & 1.4\% \\
+   compute & 11 & 1.1\% \\
+   \hline
+   \hline
+  \end{tabular}
+ } 
+ \end{center} 
+ \caption{Summary of the Twitter analytics for the hashtag \#quantumcomputing over the monitored time periods. The potential reach is defined as the total aggregate number of followers of the people who mentioned the considered keyword in their tweets.}
+\label{Most_shared_words} 
+\end{table}
