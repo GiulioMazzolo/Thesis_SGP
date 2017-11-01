@@ -1,32 +1,23 @@
 \chapter{HPC projects on Twitter} \label{HPC_projects_on_Twitter}
-Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+As shown in section \ref{Online_presence_breakdown}, roughly 80\% of the FET HPC projects have created a profile on Twitter. This percentage is larger than the corresponding value calculated for the other FET projects. Nevertheless, it is insufficient to determine whether HPC projects are conducting active communication campaigns on Twitter. 
 
-\section{Overall activity}
-The first step for a deeper look at the activity of HPC projects on Twitter was to analyse the activity of the considered accounts since the day they had been opened. The results are collected in Table \ref{HPC_Twitter_activity}. This was done with the Twitonomy application.
+To assess the activity and influence of HPC projects on Twitter, an analysis of their profiles was performed. The results were integrated by the monitoring activity of the mentions to HPC projects on Twitter over a period of three and a half months. The goal of this second analysis was to assess the virality of tweets on the considered projects. The monitoring was performed with the Twitter Analytics Tool NUVI \cite{NUVI}. 
 
-\subsubsection{Tweets per day}
-Out of the 17 considered HPC projects, three have an average tweeting rate of more than one post per day whereas 12 post less than once every second day. In particular, one project has posted no tweets since the opening of the account. The median of all projects is 0.16 tweets/day. This corresponds to roughly 5 posts per month. The median was chosen for its robusteness, similarly to what was done in section \ref{Budget_impact}. The time distribution of the tweets of the accounts with the highest rates are shown in figures \ref{Tweets_Exanest-Exdci} and \ref{Tweets_Montblanc-Deepest}.  
+Both analyses are described in this chapter. Section \ref{Overall_activity} provides an overview of the past activity of the HPC Twitter profiles. Section \ref{Influence} identifies the most influential HPC projects. Section ... presents the monitoring of the mentions to HPC projects. Section ... ranks HPC project in order of virality of their mentions. 
 
-\subsubsection{Retweets and retweets times}
-Another interesting result is the one about retweeted tweets. This corresponds to the percentage of the account's tweets retweeted by other users. The higher this number, the more the user is considered a valuable source of information by others. The table shows that one project had significantly more than half of the tweets retweeted. The median is 23.6\%. This data is integrated by the data on the average number of times each retweeted tweet was retweeted. This also indicates how valuable this account is considered by others. In the list in the table, six projects have an average times of retweet higher or equal to two, which means that retweeted tweets are retweeted by more than one user. The median value is 1.67.
-
-\subsubsection{Links and hashtags per tweet}
-Table \ref{HPC_Twitter_activity} reports also the average number of links and hashtags in the tweets of the considered projects. The higher the former number, the more likely the user is a source of information to others. As for the latter number, the higher it is, the more likely the user's tweets are to be found in a search. The table shows that six projects have an average number of links per tweets higher or equal to 0.5, meaning that they post a link every second tweet. The median is 0.32, i.e. one link every third tweet. As for the number of hashtags, three projects have a number equal or larger than one. The median is 0.25, i.e., one hashtag every fourth tweet.
-
-\subsubsection{Comparison to FET profile}
-Table \ref{HPC_Twitter_activity} reports also the values for the Twitter profile @fet\textunderscore eu of the FET funding programme. The number of tweets per day is much larger than the median of HPC projects. The same holds for the number of retweets.  Nevertheless, the number of retweets tweets is not significantly larger than the median value for HPC (32\% vs 23.6\%). The same holds for the number of links per tweets, whereas the average number of hashtags is almost four times larger.
-
+\section{Overall activity} \label{Overall_activity}
 \afterpage{
  \clearpage %Flush earlier floats (otherwise order might not be correct)
  \thispagestyle{empty} %empty page style
    \begin{landscape}
-   \begin{table}[htb]
-   \begin{adjustwidth}{-1.0cm}{}
+   %\begin{table}[htb]
+   \begin{table}
+   \begin{adjustwidth}{-1.5cm}{}
    {\tiny
     \begin{tabular}{*{8}{c}} 
       \hline 
   	  \hline
-       Project & Start date & Tweets & Tweets per day & Tweets retweeted & Times per retweeted tweet & Links per tweet & Hashtags per tweet \\ 
+       Project & Date of first tweet & Tweets & Tweets per day & Tweets retweeted & Times per retweeted tweet & Links per tweet & Hashtags per tweet \\ 
        \hline
        \hline
        ALLScale & 26/05/2016 & 39 & 0.08 & 15\% & 1.67 & 0.72 & 0.38 \\
@@ -51,12 +42,14 @@ Table \ref{HPC_Twitter_activity} reports also the values for the Twitter profile
        \hline
     \end{tabular}
    }     
-   \caption{FET projects launched within the Horizon 2020 funding programme as of 15th July 2017. Total and EU funds are expressed in Euros. The links to the websites and Twitter and Facebook accounts were searched for by directly contacting the projects. For some of the projects, no contact details were found or no reply was received. In such cases, a dedicated search for the considered channels was conducted. Some channels may have not been found by the search. Thus, the information in the Table could be incomplete.} \label{HPC_Twitter_activity}
+   \caption{Statistics collected from the Twitter accounts of the HPC projects. The data were collected from the date of the project's first tweet to 14th October 2017. Tweets per day is the average number of tweets posted each day. Tweets retweeted corresponds to the fraction of the project's tweets which have been retweeted by other accounts. Times per retweeted tweet refers to the average number of times a retweeted post has been retweeted. The last two columns report the average number of links and hashtags per project's tweet. The EuroLab-4-HPC project has posted no tweets since the creation of the account. The last row refers to the @fet\textunderscore eu profile of the FET funding programme. For this account, the statistics are limited to the maximum number of past tweets returned by Twitter (3200). The data were collected with the Twitter Analytics Tool Twitonomy.} \label{HPC_Twitter_activity}
    \end{adjustwidth} 
    \end{table}
    \end{landscape}
  \clearpage
 }
+
+The past activity of the Twitter accounts of HPC projects was investigated with the Twitter Analytics Tool Twitonomy \cite{Twitonomy}. Analysed data cover the profiles' histories since their creation and till 14th October 2017. The statistics collected for each project are listed in table \ref{HPC_Twitter_activity}. The results calculated from these data are outlined in the following subsections.
 
 \begin{figure}
  \centering
@@ -69,7 +62,7 @@ Table \ref{HPC_Twitter_activity} reports also the values for the Twitter profile
    \includegraphics[width=1\linewidth]{Images/Tweets_Exdci.png}
    \caption{}
  \end{subfigure}
- \caption{(a) Time distribution of the number of tweets with hashtag \#quantumcomputing posted between 7th and 14th October 2017. (b) As for (a) but over the time period between 20th and 25th October 2017.} 
+ \caption{(a) Time distribution of the number of tweets posted by ExaNeSt, the HPC project with the largest average number of tweets per day (1.54) as of 14th October 2017. (b) As for (a) but for EXDCI, the HPC project with the second largest average number of tweets per day (1.53). The plots were generated with the Twitter Analytics Tool Twitonomy.} 
  \label{Tweets_Exanest-Exdci}
 \end{figure}
 
@@ -84,11 +77,35 @@ Table \ref{HPC_Twitter_activity} reports also the values for the Twitter profile
    \includegraphics[width=1\linewidth]{Images/Tweets_Deepest.png}
    \caption{}
  \end{subfigure}
- \caption{(a) Time distribution of the number of tweets with hashtag \#quantumcomputing posted between 7th and 14th October 2017. (b) As for (a) but over the time period between 20th and 25th October 2017.} 
+ \caption{(a) Time distribution of the number of tweets posted by Mont-Blanc 3, the HPC project with the third largest average number of tweets per day (1.21) as of 14th October 2017. (b) As for (a) but for DEEP-EST, the HPC project with the fourth largest average number of tweets per day (900). The plots were generated with the Twitter Analytics Tool Twitonomy.} 
  \label{Tweets_Montblanc-Deepest}
 \end{figure}
 
-\section{Influence}
+\subsubsection{Tweets per day}
+Out of the seventeen considered HPC projects, three have an average tweeting rate larger than one post per day. The time distribution of the tweets of the accounts with the highest average rates are shown in figures \ref{Tweets_Exanest-Exdci} and \ref{Tweets_Montblanc-Deepest}. The tweeting rate is lower than once every second day for twelve profiles. In particular, one project has posted no tweets since the creation of the account. 
+
+The median of the projects' rates is 0.16 tweets/day. This corresponds to roughly 5 posts per month. The median was chosen as representative value of the HPC posting rates for its robustness in the presence of outliers, see also section \ref{Budget_impact}.
+
+\subsubsection{Retweets}
+The percentage of an account's tweets retweeted by other users offers an estimate of the effectiveness of its activity on Twitter. The higher the percentage, the more the account is considered a valuable source of information by the Twitter community. 
+
+The HPC project with the largest fraction of tweets retweeted by other accounts is READEX (roughly 70\%). Except for one, all other profiles have a percentage value smaller than 50\%. The median of the fraction of retweeted tweets calculated over all HPC projects is 23.6\%.
+
+The results on the percentage of retweeted posts is integrated by the average number of times such tweets were retweeted by different users. The higher this value, the more the Twitter community finds the profile's tweets worth to be forwarded. Table \ref{HPC_Twitter_activity} shows that six projects have an average number of times of retweet higher or equal to two. The result indicates that posts are typically retweeted by more than one user. The median calculated over all profiles is 1.67.
+
+\subsubsection{Links and hashtags}
+Links and hashtags are effective ways to enhance the relevance of a Tweet. In particular, the higher the average number of links per tweet for a given profile, the more likely the account is a source of information to other users. The higher the average number of hashtags per tweet, the higher the chance that the profile's tweets are found in a search.
+
+As shown in table \ref{HPC_Twitter_activity}, six HPC accounts have an average number of links per tweets higher or equal to 0.5. This corresponds to one link every second tweet. The median calculated over all HPC Twitter accounts is 0.32, i.e. one link every third tweet. 
+
+Three projects have accounts with an average number of hashtags equal or larger than one. The median is 0.25, which corresponds to one hashtag every fourth tweet.
+
+\subsubsection{Comparison to the FET Twitter profile}
+Table \ref{HPC_Twitter_activity} reports the statistics calculated for the Twitter profile @fet\textunderscore eu of the FET funding programme as well. The data were collected starting from 7th January 2016. The date was determined a was due to the maximum number of past tweets returned by Twitter. 
+
+The corresponding average number of tweets per day is much larger than the median of HPC projects. The same holds for the number of retweets.  Nevertheless, the number of retweets tweets is not significantly larger than the median value for HPC (32\% vs 23.6\%). The same holds for the number of links per tweets, whereas the average number of hashtags is almost four times larger.
+
+\section{Influence} \label{Influence}
 To find what are the HPC projects more influent on twitter, the data in table \ref{HPC_influence_table}. Data are updated to 14th October 2017. Influent projects on twitter are identified with the following conditions: high number of followers and high ratio followers/following. These data are were collected with twitonomy and are shown in table \ref{HPC_influence_table}.
 
 The values in the table are shown in figure \ref{HPC_influence_plot}. The plot shows that the most influent HPC projects are identified by the conditions followers more than 100 and ratio larger than 2. These two values were identified by calculating the median of the number of followers and of the ratio followers/following of HPC projects. These projects are ExaFLOW, EXDCI, NEXTGenIO and READEX.
@@ -107,7 +124,7 @@ The values in the table are shown in figure \ref{HPC_influence_plot}. The plot s
    COMPAT & 131 & 160 & 0.82 \\
    DEEP-EST & 697 & 534 & 1.31 \\
    ECOSCALE & 42 & 1 & 42 \\
-   EuroLab-4-HPC 24 & 2 & 12 \\
+   EuroLab-4-HPC & 24 & 2 & 12 \\
    ExaFLOW & 206 & 90 & 2.29 \\
    ExaNeSt & 211 & 261 & 0.81  \\
    ExaNoDe & 52 & 54 & 0.96 \\
@@ -137,7 +154,7 @@ The values in the table are shown in figure \ref{HPC_influence_plot}. The plot s
  \end{center}
 \end{figure}
 
-\section{Mentions of HPC projects}
+\section{Mentions of HPC projects} 
 A monitoring activity was launched to estimate the impact of HPC projects of Twitter. This was performed with the Twitter Analytics tool NUVI \cite{NUVI}. This activity monitored the mentions of the Twitter accounts of HPC projects from 1st July to 12th October 2017. The monitor activity analysed a total of 1323 social mentions. The time distribution of the mentions is shown in figure \ref{NUVI_time_distribution}.
 
 The peak of conversation happened on 12th September 2017. It consisted of 59 mentions, with the most frequently used keywords during that peak being filippo mantovani, workshop, server cpu, prototype and processors.
@@ -200,4 +217,41 @@ An overview of the topics treated in the monitored mentions is provided in figur
  \end{center} 
  \caption{Summary of the Twitter analytics for the hashtag \#quantumcomputing over the monitored time periods. The potential reach is defined as the total aggregate number of followers of the people who mentioned the considered keyword in their tweets.}
 \label{Most_shared_words} 
+\end{table}
+
+\section{Most viral HPC projects}
+
+\begin{table}[t]
+ \begin{center}
+ {\scriptsize
+  \begin{tabular}{cccc}
+   \hline 
+   \hline
+   Project & Reach & Spread & Viral coefficient \\ 
+   \hline
+   \hline
+   ALLScale & 48 & 0 & 0.0 \\
+   ANTAREX & 202 & 9 & 0.0 \\
+   COMPAT & 13 286 & 112 & 0.0 \\
+   DEEP-EST & 11 759 & 6 988 & 0.6 \\
+   ECOSCALE & 55 & 2 268 & 41.2 \\
+   EuroLab-4-HPC & 2 135 & 14 679 & 6.9 \\
+   ExaFLOW & 18 366 & 28 311 & 1.5 \\
+   ExaNeSt & 18 109 & 62 259 & 3.4  \\
+   ExaNoDe & 6 559 & 4 470 & 0.7 \\
+   EXDCI & 111 534 & 23 082 & 0.2 \\
+   EXTRA & 216 & 24 & 0.1 \\
+   INTERTWINE & 7 436 & 6 673 & 0.9 \\
+   MANGO & 1 360 & 162 & 0.1 \\
+   Mont-Blanc 3 & 30 362 & 58 782 & 1.9 \\
+   NEXTGenIO & 4 056 & 53 838 & 13.5 \\
+   READEX & 117 & 0 & 0.0 \\
+   SAGE & 1 537 & 4 836 & 3.1 \\ 
+   \hline
+   \hline
+  \end{tabular}
+ } 
+ \end{center} 
+ \caption{Summary of the Twitter analytics for the hashtag \#quantumcomputing over the monitored time periods. The potential reach is defined as the total aggregate number of followers of the people who mentioned the considered keyword in their tweets.}
+\label{HPC_viral_coefficients} 
 \end{table}
