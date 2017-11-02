@@ -157,7 +157,7 @@ To identify the most influential profiles among HPC projects, the following anal
 By following this procedure, the most influential projects are ExaFLOW (206, 2.29), EXDCI (405, 2.40), Mont-Blanc 3 (1420, 2.07) and NEXTGenIO (162, 3.86). The READEX profile (116, 2.11) is representative of the influence of HPC projects, as its values lie very close to the calculated medians.
 
 \section{Mentions of HPC profiles} \label{Mentions_of_HPC_profiles} 
-Another approach to estimate the influence of HPC projects on Twitter consists of monitoring the mentions of their accounts (i.e., @AllScaleEurope, @antarex\textunderscore project, @compatproject etc.). The monitoring activity covered the time period from 1st July to 12th October 2017 and was performed with the Twitter Analytics Tool NUVI \cite{NUVI}. Monitored mentions sum up to 1323. 
+Another approach to estimate the influence of HPC projects on Twitter consists of monitoring the mentions of their accounts (i.e., @AllScaleEurope, @antarex\textunderscore project, @compatproject etc.). The monitoring activity covered the time period from 1st July to 12th October 2017 and was performed with the Twitter Analytics Tool NUVI \cite{NUVI}.  
 
 \begin{figure}[!t] 
  \begin{center}
@@ -167,7 +167,8 @@ Another approach to estimate the influence of HPC projects on Twitter consists o
  \end{center}
 \end{figure}
 
-The time distribution of the mentions is shown in figure \ref{NUVI_time_distribution}. The peak of conversation (59 mentions) happened on 12th September 2017. During the peak, the most frequently used keywords were filippo mantovani, workshop, server cpu, prototype and processors. An overview of the topics treated in the monitored mentions is provided in figure \ref{HPC_word_burst}. The figure is based on the 1005 mentions which came across 485 major categories over the monitored time. The list of most shared words is in table \ref{Most_shared_words}.
+\subsubsection{Overview}
+Monitored mentions sum up to 1323. The time distribution of the mentions is shown in figure \ref{NUVI_time_distribution}. The peak of conversation (59 mentions) happened on 12th September 2017. During the peak, the most frequently used keywords were filippo mantovani, workshop, server cpu, prototype and processors. An overview of the topics treated in the monitored mentions is provided in figure \ref{HPC_word_burst}. The figure is based on the 1005 mentions which came across 485 major categories over the monitored time. The list of most shared words is in table \ref{Most_shared_words}.
 
 \begin{table}[t]
  \begin{center}
@@ -193,41 +194,50 @@ The time distribution of the mentions is shown in figure \ref{NUVI_time_distribu
 \label{Most_shared_words} 
 \end{table}
 
-\begin{figure}[!t] 
+\subsubsection{Virality of the mentions}
+Reach and spread together give an estimate of the potential audience which came across with the tweeted content. The reach is calculated as the sum of the followers of the accounts mentioning the analysed keyword. The spread is defined as the sum of the followers of the accounts which retweeted or shared the posts with the mention. Figure \ref{HPC_Most_reach_spread_popular} shows the mentions with the largest reach and spread, as well as the most popular one. 
+
+\begin{figure}[H] 
  \begin{center}
- \includegraphics[scale=0.55]{Images/HPC_word_burst.png}
- \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
+ \includegraphics[scale=0.5]{Images/HPC_word_burst.png}
+ \caption{Word burst of the mentions of HPC profiles monitored between 1st July and 12th October 2017 on Twitter. The figure is based on the 1005 mentions (out of 1323) which triggered 485 major categories. The analysis was performed with the Twitter Analytics Tool NUVI.}
  \label{HPC_word_burst}
  \end{center}
 \end{figure}
 
-Out of the 1323 mentions, 637 were original mentions, which had the potential of reaching an audience of 172 720 users. This reach is calculated as the sum of the followers of the accounts mentioning the analysed keywords. Moreover, 116 unique profiles made a total of 686 reshares. Shares and re-tweets spread the mentions to an additional 233 974 people. The spread is calculated as the sum of the followers of the accounts which shared or retweeted the tweets with the mentions. Reach and spread together give an estimate of the potential audience which came across with the tweeted contents. Figure \ref{HPC_Most_reach_spread_popular} shows the mentions with the largest reach, spread and the most popular one. The ratio between reach and spread defines the viral coefficient, which is equal to 1.4, see figure \ref{HPC_viral_coefficient}. As the value of the viral coefficient is larger than one indicates that the mentions were extremely viral. 
-
 \begin{figure}[!t] 
  \begin{center}
  \includegraphics[scale=0.41]{Images/HPC_Most_reach_spread_popular.png}
- \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
+ \caption{Three of the 1323 mentions of HPC projects on Twitter monitored between 1st July and 12th October 2017: the mentions with the largest reach, the largest spread and the most popular one. Data were collected with the Twitter Analytics Tool NUVI.}
  \label{HPC_Most_reach_spread_popular}
  \end{center}
 \end{figure}
 
-\begin{figure}[t] 
+Out of the 1323 monitored mentions, 637 were original posts. These had all together the potential of reaching an audience of 172 720 users. A total amount of 686 reshares was made by 116 unique profiles. The reshares spread the mentions to 233 974 users. The ratio between reach and spread defines the viral coefficient. For the monitored mentions and over the investigated period, it value is equal to 1.4, see figure \ref{HPC_viral_coefficient}. As the viral coefficient is larger than one, monitored mentions can be considered extremely viral. 
+
+\begin{figure}[H] 
  \begin{center}
  \includegraphics[scale=0.2]{Images/HPC_viral_coefficient.png}
- \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
+ \caption{Graphic comparison of the reach (172 720 users) and spread (233 974 users) of the mentions of HPC projects on Twitter between 1st July and 12th October 2017. The viral coefficient is defined as the ratio between spread and reach. Data were collected with the Twitter Analytics Tool NUVI.}
  \label{HPC_viral_coefficient}
  \end{center}
 \end{figure}
 
-%\begin{figure}[!t] 
-% \begin{center}
-% \includegraphics[scale=0.55]{Images/HPC_word_burst.png}
-% \caption{Projects' distribution as a function of the available budget and of the number of considered online communication channels. The vertical lines are the budget medians of the group of projects with activated channels ranging between one and four. For the sake of clarity, the figure shows the budget range up to \euro 11.5 Million. The following projects were used for the medians calculation but lie outside the plotted budget range: QuantERA (\euro 40.5 Million, 3 channels), FLAG-ERA II (\euro 18.3 Million, two channels) and DEEP-EST (\euro 15.9 Million, 3 channels).}
-% \label{HPC_word_burst}
-% \end{center}
-%\end{figure}
+\section{Projects with most viral mentions}
+Results in section \ref{Mentions_of_HPC_profiles} refer to the whole set of mentions of HPC monitored over the analysed weeks. The data breakdown for each single project is summarised in table \ref{HPC_viral_coefficients}. It is worth noting that the values of reach, spread and viral coefficient vary significantly among HPC projects. The medians of the three variables are 4056, 4836 and 0.7, respectively.      
 
-\section{Most viral HPC projects}
+Seven out of seventeen projects have been mentioned in viral conversations (i.e., with viral coefficients larger than unity). The projects with the largest viral coefficients are ECOSCALE (41.2), NEXTGenIO (13.5) and EuroLab-4-HPC (6.9). It is worth noting the following: \textit{i}) the largest viral coefficient of ECOSCALE originates from the low number of mentions of the project; \textit{ii}) EuroLab-4-HPC is mentioned in viral posts although it had posted no tweets by the time of writing, see table \ref{HPC_Twitter_activity}; \textit{iii}) with the exception of EXDCI, the most influential projects identified in section \ref{Most_influential_projects} are all mentioned in viral conversations.
+
+\section{Chapter summary}
+In this chapter, the following items have been discussed:
+
+\begin{enumerate}
+ \item The activity of HPC projects on Twitter ranges between roughly one tweet every three months and three tweets every second day. The median calculated over all HPC Twitter profile is approximately one tweet per week. HPC projects perform well in terms of profile's tweets retweeted by other and shared links. The medians of the two statistics are comparable to the corresponding values calculated for the Twitter account of the FET funding programme.
+ \item The most influential HPC projects on Twitter were found to be ExaFLOW, EXDCI, Mont-Blanc 3 and NEXTGenIO. In general, HPC influential initiatives are identified by a number of followers and a ratio followers/following larger than $\approx 100$ and $\approx 2$, respectively. 
+ \item The mentions of HPC projects on Twitter were found to be viral over a period of three and a half months. The result indicates that the Twitter community interested in FET HPC initiatives is large. Thus, the decision of the vast majority of HPC projects to consider Twitter for their communication campaign is correct.
+ \item In general, the most influential HPC projects are also those mentioned in the most viral conversations.    
+\end{enumerate}  
+
 
 \begin{table}[t]
  \begin{center}
@@ -260,6 +270,6 @@ Out of the 1323 mentions, 637 were original mentions, which had the potential of
   \end{tabular}
  } 
  \end{center} 
- \caption{Summary of the Twitter analytics for the hashtag \#quantumcomputing over the monitored time periods. The potential reach is defined as the total aggregate number of followers of the people who mentioned the considered keyword in their tweets.}
+ \caption{Reach, spread and viral coefficient of the mentions of each HPC project on Twitter between 1st July and 12th October 2017. The viral coefficient is defined as the ratio between spread and reach. Data were collected with the Twitter Analytics Tool NUVI.}
 \label{HPC_viral_coefficients} 
 \end{table}
