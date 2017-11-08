@@ -1,7 +1,7 @@
 unset key
 set boxwidth 0.4
 set style fill solid 1.00
-set ylabel "Funding (Billion Euros)"
+set ylabel "Funding (Billion Euro)"
 set xtics nomirror rotate by -45
 set format y '%.0s %c'
 set tic scale 0
