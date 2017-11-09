@@ -1,7 +1,9 @@
 #Channel	   #Percentage
-Website			96	   		   
-Twitter	   		51
-Facebook	   	20
-LinkedIn	  	15
-YouTube			10
-ResearchGate	       	8	
+Website			95	   		   
+Twitter	   		52
+Facebook	   	21
+LinkedIn	  	16
+ResearchGate	       	 8
+YouTube			 7
+Instagram		 2
+	
