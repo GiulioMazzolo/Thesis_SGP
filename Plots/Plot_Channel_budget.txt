@@ -20,10 +20,10 @@ set style line 2 dt 2 lc rgb "#ce8d0c" lw 2
 set style line 3 dt 3 lc rgb "#34d344" lw 2
 set style line 4 dt 4 lc rgb "#c413a3" lw 2
 
-set arrow nohead ls 1 from 3.4,-0.5 to 3.4,6.5 
-set arrow nohead ls 2 from 3.5,-0.5 to 3.5,6.5
+set arrow nohead ls 1 from 3.5,-0.5 to 3.5,6.5 
+set arrow nohead ls 2 from 3.7,-0.5 to 3.7,6.5
 set arrow nohead ls 3 from 3.8,-0.5 to 3.8,6.5 
-set arrow nohead ls 4 from 4.0,-0.5 to 4.0,6.5                                                 
+set arrow nohead ls 4 from 4.2,-0.5 to 4.2,6.5                                                 
                                    
 plot 'C:\Users\Emanuela\Desktop\Giulio\Varie\Master_Roma\Thesis_SGP\Plots\Dati\Channel_budget.txt' with points pointtype 21 pointsize 0.8 lc rgb "#406090" title "FET project", \
 												   1e20 ls 1 t "One channel", \
