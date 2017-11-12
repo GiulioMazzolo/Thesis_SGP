@@ -12,6 +12,8 @@
 \usepackage{eurosym} %for euro symbol
 \usepackage{float}
 \usepackage{cite}
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
 
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -31,6 +33,11 @@
  \null
  \thispagestyle{empty}
  \newpage
+
+ \newpage
+ \null
+ \thispagestyle{empty}
+ \newpage
  
  \pagenumbering{Roman}
  
@@ -41,13 +48,15 @@
  \null
  \newpage
  
- \tableofcontents
- 
  \newpage
  \null
  \newpage
  
  \pagenumbering{roman}
+ \setcounter{page}{1}
+ \tableofcontents
+  
+ %\pagenumbering{roman}
  %\setcounter{page}{1} 
  
  \renewcommand{\chaptermark}[1]{\markboth{#1}{}} 
