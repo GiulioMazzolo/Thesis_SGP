@@ -149,7 +149,7 @@ Table \ref{HPC_influence_table} lists the number of followers and following for 
 
 \begin{figure}[!t] 
  \begin{center}
- \includegraphics[scale=0.45]{Images/HPC_influence.png}
+ \includegraphics[scale=0.5]{Images/HPC_influence.png}
  \caption{Distribution of HPC projects as a function of the number of followers and of the ratio between followers and followed accounts (following) on Twitter. The dashed lines identify the medians of the numbers of followers and of the ratios followers/following calculated over the HPC profiles. The most influential projects are located in the upper right quarter (high number of followers and high values of followers/following). For the sake of clarity, the figure shows the followers and followers/following ranges up to 750 and 6, respectively. The following projects were used to calculated the medians but lie outside the plotted ranges: ECOSCALE (42 followers and follower/following equal to 42), EuroLab-4-HPC (24 and 12) and Mont-Blanc 3 (1420 and 2.07). Data were collected on 14 October 2017 with the Twitter Analytics Tool Twitonomy.}
  \label{HPC_influence_plot}
  \end{center}
@@ -164,7 +164,7 @@ Another approach to estimate the influence of HPC projects on Twitter consists o
 
 \begin{figure}[!t] 
  \begin{center}
- \includegraphics[scale=0.45]{Images/NUVI_time_distribution.png}
+ \includegraphics[scale=0.47]{Images/NUVI_time_distribution.png}
  \caption{Time distribution of the mentions of HPC profiles on Twitter between 1 July and 12 October 2017. The plot was created with the Twitter Analytics Tool NUVI.}
  \label{NUVI_time_distribution}
  \end{center}
@@ -175,7 +175,7 @@ Monitored mentions sum up to 1323. The time distribution of the mentions is show
 
 \begin{table}[t]
  \begin{center}
- {\scriptsize
+ %{\scriptsize
   \begin{tabular}{cccc}
    \hline 
    \hline
@@ -191,25 +191,27 @@ Monitored mentions sum up to 1323. The time distribution of the mentions is show
    \hline
    \hline
   \end{tabular}
- } 
+ %} 
  \end{center} 
  \caption{List of the most shared words in the 1005 mentions of the HPC profiles which came across 485 of the major categories considered by the Twitter Analytics Tool NUVI. These mentions are a subset of the 1323 mentions monitored with NUVI between 1 July and 12 October 2017. The second and third columns report the amount of mentions in which the considered word was shared and the percentage of the total mentions. }
 \label{Most_shared_words} 
 \end{table}
 
 \subsubsection{Virality of the mentions}
-Reach and spread together give an estimate of the potential audience which came across with the tweeted content. The reach is calculated as the sum of the followers of the accounts which mentioned the analysed keyword. The spread is defined as the sum of the followers
+Reach and spread together give an estimate of the potential audience which came across with the tweeted content. The reach is calculated as the sum of the followers of the accounts which mentioned the analysed keyword. The spread is defined as the sum of the followers of the accounts which retweeted or shared the posts with the mention. Figure \ref{HPC_Most_reach_spread_popular} shows the mentions with the largest reach and spread, as well as the most popular one.
 
-\begin{figure}[H] 
+Out of the 1323 monitored mentions, 637 were original posts. These had the combined potential of reaching an audience of 172720 users. A total amount of 686 reshares was made by 116 unique profiles. The reshares spread the mentions to 233974 users.
+
+%\begin{figure}[H]
+\begin{figure}[!t] 
  \begin{center}
- \includegraphics[scale=0.57]{Images/HPC_word_burst.png}
+ \includegraphics[scale=0.64]{Images/HPC_word_burst.png}
  \caption{Word burst of the mentions of HPC profiles monitored between 1 July and 12 October 2017 on Twitter. The figure is based on the 1005 mentions (out of 1323) which triggered 485 major categories. The analysis was performed with the Twitter Analytics Tool NUVI.}
  \label{HPC_word_burst}
  \end{center}
 \end{figure}
 
-\noindent
-of the accounts which retweeted or shared the posts with the mention. Figure \ref{HPC_Most_reach_spread_popular} shows the mentions with the largest reach and spread, as well as the most popular one. 
+The ratio between spread and reach defines the viral coefficient. This is equal to 1.4 for the monitored mentions and over the considered period, see figure \ref{HPC_viral_coefficient}. As the viral coefficient is larger than one, monitored mentions can be considered extremely viral. 
 
 \begin{figure}[!t] 
  \begin{center}
@@ -226,10 +228,6 @@ of the accounts which retweeted or shared the posts with the mention. Figure \re
  \label{HPC_viral_coefficient}
  \end{center}
 \end{figure}
-
-Out of the 1323 monitored mentions, 637 were original posts. These had the combined potential of reaching an audience of 172720 users. A total amount of 686 reshares was made by 116 unique profiles. The reshares spread the mentions to 233974 users. 
-
-The ratio between spread and reach defines the viral coefficient. This is equal to 1.4 for the monitored mentions and over the considered period, see figure \ref{HPC_viral_coefficient}. As the viral coefficient is larger than one, monitored mentions can be considered extremely viral. 
 
 \section{Projects with most viral mentions} \label{Projects_with_most_viral_mentions}
 Results in section \ref{Mentions_of_HPC_profiles} refer to the whole set of mentions of HPC projects monitored over the considered weeks. The data breakdown for each single project is reported in table \ref{HPC_viral_coefficients}. It is worth noting that the values of reach, spread and viral coefficient vary significantly among HPC projects. The medians of the three variables are 4056, 4836 and 0.7, respectively.     
